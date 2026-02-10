@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+
+# Virtual environments
+venv/
+
+# JetBrains IDEs
+.idea/
+core/.idea/
+
+# Database
+*.sqlite3
+core/db.sqlite3
