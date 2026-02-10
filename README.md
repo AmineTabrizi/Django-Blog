@@ -40,7 +40,7 @@ _(More features will be added over time.)_
 ## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/django-blog.git
+git clone https://github.com/AmineTabrizi/Django-Learning-Advanced.git
 cd django-blog
 python -m venv venv
 source venv/bin/activate  # Linux / macOS
