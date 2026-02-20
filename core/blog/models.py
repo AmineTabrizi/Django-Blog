@@ -8,8 +8,8 @@ class Post(models.Model):
     '''
     this is a class to define posts for blog app
     '''
-    image = models.ImageField(null=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    image = models.ImageField(null=True, blank=True)
     title = models.CharField(max_length=250)
     content = models.TextField()
     status = models.BooleanField()
