@@ -112,7 +112,7 @@ def postDetail(request, id):
 
 class PostModelViewSet(viewsets.ModelViewSet):
     """ getting a list of posts & creating a new post """
-    permission_classes = [IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+    permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
     serializer_class = PostSerializer
     queryset = Post.objects.filter(status=True)
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
